@@ -1,0 +1,27 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+  />
+  <meta charset="urf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <p id="temporizador">Jogo não iniciado</p>
+  </div>
+
+  <div id="game"></div>
+  <button id="btInicio" onclick="iniciar()">Iniciar Jogo</button>
+  <button id="btFim" onclick="location.reload(true);">Reiniciar</button>
+
+  <div id="jogadas"></div>
+
+  <script src="index.js"></script>
+</body>

@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+button {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px 150px;
+  cursor: pointer;
+  margin-left: 160px;
+}
+
+p {
+  border: 3px solid black;
+  border-radius: 5px;
+  width: auto;
+  padding: 15px 200px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+  background-color: rgb(111, 204, 111);
+}
+
+#btFim {
+  display: none;
+}
+
+#btInicio {
+  background: rgb(219, 119, 119);
+}
+
+body {
+  width: 700px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid {
+  padding: 25px 25px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 150px;
+  width: 150px;
+}
+
+.card {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 133px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url("../img/quebra.png") no-repeat center center / contain;
+  border-radius: 5px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: transparent !important;
+}
+
+.selected {
+  border-radius: 25px;
+}
+
+.match {
+  background-image: none !important;
+}
+
+#jogadas {
+  background: yellowgreen;
+  margin-top: 50px;
+  font-size: 24px;
+  width: 400px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
